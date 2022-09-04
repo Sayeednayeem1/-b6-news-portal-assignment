@@ -71,11 +71,21 @@ async function fetchSingleDetails(news_id) {
 
   const showSingleDetails = (news) => {
     const showSingleDetail = document.getElementById("news-box");
-    console.log(news);
+    showSingleDetail.classList.add('col');
+    // console.log(news);
     const newsSingle = `
-   <h1>Title: ${news.title}</h1>
-   <p>Details: ${news.details}</p>
-   <p>Total view: ${news.total_view}</p>
+        <div class="card">
+              <img src="${news.thumbnail_url}" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">${news.title}</h5>
+              <p class="card-text">${news.details}</p>
+              <p>Total view: ${news.total_view}</p>
+              </div>
+        </div>
+
+  //  <h1>Title: ${news.title}</h1>
+  //  <p>Details: ${news.details}</p>
+  //  <p>Total view: ${news.total_view}</p>
    `;
     showSingleDetail.innerHTML = newsSingle;
 
