@@ -5,14 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Questiin Answer</title>
     <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/29e51db050.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>this is a test html page</h1>
+    <header class="p-5 mt-5">
+        <h1 class="bg-info rounded text-center text-white fw-bold p-2">The Answer Of Questions Are Given Below</h1>
+    </header>
     <main>
-        
+        <section class="mt-5 p-5">
+            <!-- Qusetion Number-1 -->
+            <h1 class="text-primary ">Q-1: What are the diffrences between var, let and const?</h1>
+            <br>
+            <p>Ans: var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope. But while var variables are initialized with undefined , let and const variables are not initialized.</p>
+            <!-- Qusetion Number-2 -->
+            <br>
+            <h1 class="text-secondary">Q-2: What are the difference between arrow and regular function?</h1>
+            <br>
+            <p>Answer: Unlike regular functions, arrow functions do not have their own this . The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.</p>
+            <br>
+            <h1 class="text-danger">Q-3: What are the diffrences between map, forEach, filter and find?</h1>
+            <br>
+            <p>Answer: The forEach() method does not create a new array based on the given array. The map() method creates an entirely new array. The forEach() method returns “undefined“. The map() method returns the newly created array according to the provided callback function.</p>
+            <br>
+            <h1 class="text-info">Q-4: Why do we use template string?</h1>
+            <br>
+            <p>Answer: Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements.</p>
+        </section>
+
     </main>
     <!-- script section -->
 

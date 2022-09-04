@@ -20,7 +20,9 @@ const displayNews = newses =>{
             <div class="card-body">
                 <h5 class="card-title">${news.title}</h5>
                 <p class="card-text">${news.details.slice(0, 338)}</p>
+                
             </div>
+            <button><p><i class="fa-sharp fa-solid fa-circle-arrow-right"></i></p></button>
         </div>
         
         `;
