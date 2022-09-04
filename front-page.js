@@ -15,19 +15,18 @@ const displayNews = newses =>{
         newsDiv.classList.add('col');
         newsDiv.innerHTML = `
         
-        <div class="card rounded-4">
+        <div id="test" class="card rounded-4">
             <img class="pt-5 pb-2 h-25 mx-auto w-75" src="${news.thumbnail_url}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${news.title}</h5>
-                <p class="card-text">${news.details.slice(0, 338)}</p>
-                
+                <p class="card-text">${news.details.slice(0, 338)}</p>   
             </div>
-            <button><p><i class="fa-sharp fa-solid fa-circle-arrow-right"></i></p></button>
         </div>
         
         `;
         newsSection.appendChild(newsDiv);
     })
-} 
+}
+
 
 loadNews();

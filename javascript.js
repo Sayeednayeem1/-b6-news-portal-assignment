@@ -82,10 +82,6 @@ async function fetchSingleDetails(news_id) {
               <p>Total view: ${news.total_view}</p>
               </div>
         </div>
-
-  //  <h1>Title: ${news.title}</h1>
-  //  <p>Details: ${news.details}</p>
-  //  <p>Total view: ${news.total_view}</p>
    `;
     showSingleDetail.innerHTML = newsSingle;
 
