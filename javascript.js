@@ -49,6 +49,8 @@ async function showDetails(id) {
     categoryDiv.className = "categories";
     const categorySeparate = `
      <h2  onclick="fetchSingleDetails('${category._id}')" style="margin-top: 10px;" >${category.title}</h2>
+     
+    
     `;
 
     categoryDiv.innerHTML = categorySeparate;
